@@ -23,7 +23,6 @@
     "statement": "User confirmed the new version worked; this is not an exhaustive benchmark."
   },
   "pending": [
-    "Remote CI results; inspect Actions after publication.",
     "Manual target-machine run of the v0.3 package.",
     "Biological validation and external scientific study."
   ],
@@ -38,5 +37,11 @@
     "linux_core_and_gui_python310_312": "passed",
     "windows_core_python310_312": "passed; Linux install test skipped",
     "windows_gui_python310_312": "failed in verifier decoding UTF-8 SVG with cp1252; verifier corrected and local GUI rerun passed"
+  },
+  "final_remote_ci": {
+    "tested_commit": "ac73632fd23775d0a97b8363fc646e0dee90958d",
+    "run_url": "https://github.com/BrunoJimez/BioForma/actions/runs/38118297441",
+    "six_jobs": "passed",
+    "independent_reports": "Source and fixture-manifest hashes agree with the local snapshot in both systems."
   }
 }

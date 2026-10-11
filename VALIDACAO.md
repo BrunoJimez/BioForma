@@ -80,9 +80,9 @@ locus rRNA parcial, sem significado proteico na tradução arbitrária. PhiX174 
 DNA de fita simples; o duplex da interface é uma ilustração.
 
 O usuário confirmou a 0.2 no Windows. O pacote 0.3 ainda precisa de uso manual no
-computador de destino. O workflow remoto testa Windows e Linux; verificar seu
-resultado na aba Actions depois do envio. Não declarar resultados remotos antes
-de observá-los. O paper e o DOI são etapas futuras em `docs/RESEARCH_ROADMAP.md`.
+computador de destino. O workflow remoto foi aprovado em Windows e Linux; os detalhes da execução
+final estão ao fim deste documento e em `validacao/remote_ci.json`. O paper
+e o DOI são etapas futuras em `docs/RESEARCH_ROADMAP.md`.
 
 ## English evidence summary
 
@@ -120,3 +120,17 @@ relatórios originais baixados do CI são preservados sem conversão. Os cálcul
 e critérios permanecem iguais. O relatório Windows dessa execução fica em
 `validacao/results_v0.3.0_windows_ci_initial.json`; o arquivo final é gerado
 pela execução após a padronização.
+
+## CI final aprovado — 2026-10-11
+
+Commit testado: `ac73632fd23775d0a97b8363fc646e0dee90958d`. Execução: https://github.com/BrunoJimez/BioForma/actions/runs/38118297441
+Todos os seis jobs passaram: núcleo e interface nativa PT/EN em Windows/Linux
+com Python 3.10/3.12, mais as comparações independentes em ambos os sistemas.
+Os relatórios completos finais ficam em `results_v0.3.0_windows_ci.json` e
+`results_v0.3.0_linux_ci.json`, dentro de `validacao/`. As assinaturas SHA-256
+do código e do manifesto agora coincidem com o snapshot local nos dois sistemas.
+Os artifacts originais foram baixados e tiveram seus SHA-256 de ZIP conferidos
+contra os digests publicados pelo GitHub. `remote_ci.json` registra os jobs.
+O Windows remoto é Windows Server 2025, não o Windows 10 do computador do usuário.
+Instalação/uso manual da versão 0.3 no computador do usuário continua uma checagem
+separada. Esta atualização acrescenta evidências e não modifica o motor validado.

@@ -1,0 +1,2742 @@
+{
+  "schema": 1,
+  "software": "BioForma Studio",
+  "version": "0.3.0",
+  "generated_utc": "2026-10-11T06:31:26.685740+00:00",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-2025Server-10.0.26100-SP0",
+    "biopython": "1.86",
+    "scipy": "1.17.0",
+    "numpy": "2.3.5"
+  },
+  "seed": 20261010,
+  "checks": [
+    {
+      "name": "file_sha256:NR_027552.1.fasta",
+      "passed": true,
+      "sha256": "8e817b865795c9b0e595ffea6b233ac33238ca9cc716bd3546c2226db67b720d"
+    },
+    {
+      "name": "file_sha256:NR_027552.1.gb",
+      "passed": true,
+      "sha256": "d160cbe32a8f68a45a16754806eb0963027c94e04ace56ff6865666baebaad3b"
+    },
+    {
+      "name": "FASTA_exact:NR_027552.1",
+      "passed": true
+    },
+    {
+      "name": "GenBank_ORIGIN_exact:NR_027552.1",
+      "passed": true
+    },
+    {
+      "name": "length_GC:NR_027552.1",
+      "passed": true
+    },
+    {
+      "name": "reverse_complement:NR_027552.1",
+      "passed": true
+    },
+    {
+      "name": "translation_frame_1:NR_027552.1",
+      "passed": true
+    },
+    {
+      "name": "translation_frame_2:NR_027552.1",
+      "passed": true
+    },
+    {
+      "name": "translation_frame_3:NR_027552.1",
+      "passed": true
+    },
+    {
+      "name": "file_sha256:NC_001422.1.fasta",
+      "passed": true,
+      "sha256": "caa155c83967cc080f4f188f14f1f28c18d77448e87c3d00d3579ed348f4de2a"
+    },
+    {
+      "name": "file_sha256:NC_001422.1.gb",
+      "passed": true,
+      "sha256": "0a8099e207633f8c3ba998bfe2a198518e1de356c7956691101b2512324b807c"
+    },
+    {
+      "name": "FASTA_exact:NC_001422.1",
+      "passed": true
+    },
+    {
+      "name": "GenBank_ORIGIN_exact:NC_001422.1",
+      "passed": true
+    },
+    {
+      "name": "length_GC:NC_001422.1",
+      "passed": true
+    },
+    {
+      "name": "reverse_complement:NC_001422.1",
+      "passed": true
+    },
+    {
+      "name": "translation_frame_1:NC_001422.1",
+      "passed": true
+    },
+    {
+      "name": "translation_frame_2:NC_001422.1",
+      "passed": true
+    },
+    {
+      "name": "translation_frame_3:NC_001422.1",
+      "passed": true
+    },
+    {
+      "name": "file_sha256:1CRN.pdb",
+      "passed": true,
+      "sha256": "42199a30a0701864a2a5cc76cd7f35cc544cd0e65fbcf63e03c166543249b811"
+    },
+    {
+      "name": "64_canonical_codons",
+      "passed": true,
+      "cases": 64
+    },
+    {
+      "name": "3375_IUPAC_declared_policy",
+      "passed": true,
+      "cases": 3375,
+      "comparator_differences": 127,
+      "interpretation": "Intentional conservative X policy; not full consensus translation agreement."
+    },
+    {
+      "name": "1CRN_atom_count",
+      "passed": true,
+      "bioforma": 327,
+      "biopython": 327
+    },
+    {
+      "name": "1CRN_atom_identity",
+      "passed": true
+    },
+    {
+      "name": "1CRN_coordinates",
+      "passed": true,
+      "max_absolute_error_angstrom": 9.460449206244448e-07,
+      "tolerance_angstrom": 0.001
+    },
+    {
+      "name": "1CRN_CA_trace",
+      "passed": true,
+      "points": 46,
+      "edges": 45
+    },
+    {
+      "name": "ODE_SciPy_DOP853",
+      "passed": true,
+      "cases": 113,
+      "total_timepoints": 56613,
+      "atol": 1e-07,
+      "rtol": 1e-06,
+      "max_absolute_error": 3.868415774377354e-06,
+      "max_tolerance_ratio": 0.5456369747301181
+    }
+  ],
+  "sequence_records": [
+    {
+      "accession": "NR_027552.1",
+      "length": 1517,
+      "gc_percent": 55.30652603823336,
+      "molecule_type": "rRNA",
+      "sequence_sha256": "6bbf1f26750d14c1ba75a2a4cd77d3d876d75da14710652e31db8c96c5c17532"
+    },
+    {
+      "accession": "NC_001422.1",
+      "length": 5386,
+      "gc_percent": 44.76420349053101,
+      "molecule_type": "ss-DNA",
+      "sequence_sha256": "97038c7e1edea2297667d7f0426ba942b322c74cb30e072ec66ba47f9c0448d0"
+    }
+  ],
+  "ode_cases": [
+    {
+      "case": "default_AND",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 2.006483867944553e-10,
+      "max_tolerance_ratio": 2.453219809502947e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_AND_0_0",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0,
+        "input_b": 0,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_AND_0_1",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0,
+        "input_b": 1,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_AND_1_0",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 1,
+        "input_b": 0,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_AND_1_1",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 1,
+        "input_b": 1,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 4.170210843312816e-10,
+      "max_tolerance_ratio": 2.460924806158923e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "default_OR",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 3.9192826761791366e-10,
+      "max_tolerance_ratio": 2.4693609682793535e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_OR_0_0",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0,
+        "input_b": 0,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_OR_0_1",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0,
+        "input_b": 1,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 4.170210843312816e-10,
+      "max_tolerance_ratio": 2.460924806158923e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_OR_1_0",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 1,
+        "input_b": 0,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 4.170210843312816e-10,
+      "max_tolerance_ratio": 2.460924806158923e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_OR_1_1",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 1,
+        "input_b": 1,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 4.170210843312816e-10,
+      "max_tolerance_ratio": 2.460924806158923e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "default_NOT_A",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 8.468781231840694e-11,
+      "max_tolerance_ratio": 2.2861919281819124e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_NOT_A_0_0",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0,
+        "input_b": 0,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 4.170210843312816e-10,
+      "max_tolerance_ratio": 2.460924806158923e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_NOT_A_0_1",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0,
+        "input_b": 1,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 4.170210843312816e-10,
+      "max_tolerance_ratio": 2.460924806158923e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_NOT_A_1_0",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 1,
+        "input_b": 0,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_NOT_A_1_1",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 1,
+        "input_b": 1,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "default_XOR",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 1.8664714218630252e-10,
+      "max_tolerance_ratio": 2.4428350054100423e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_XOR_0_0",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0,
+        "input_b": 0,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_XOR_0_1",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0,
+        "input_b": 1,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 4.170210843312816e-10,
+      "max_tolerance_ratio": 2.460924806158923e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_XOR_1_0",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 1,
+        "input_b": 0,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 4.170210843312816e-10,
+      "max_tolerance_ratio": 2.460924806158923e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "endpoints_XOR_1_1",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 1,
+        "input_b": 1,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "zero_transcription",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_tolerance_ratio": 0.0,
+      "timepoints": 501
+    },
+    {
+      "case": "zero_translation",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 0,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 2.1955326445777246e-11,
+      "max_tolerance_ratio": 9.704177805812758e-06,
+      "timepoints": 501
+    },
+    {
+      "case": "decay_extrema_0.01_0.01",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 10,
+        "translation": 10,
+        "decay_m": 0.01,
+        "decay_p": 0.01,
+        "duration": 300
+      },
+      "passed": true,
+      "max_absolute_error": 2.113694790750742e-06,
+      "max_tolerance_ratio": 7.720904657987198e-06,
+      "timepoints": 501
+    },
+    {
+      "case": "decay_extrema_0.01_5",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 10,
+        "translation": 10,
+        "decay_m": 0.01,
+        "decay_p": 5,
+        "duration": 300
+      },
+      "passed": true,
+      "max_absolute_error": 5.007966592529556e-07,
+      "max_tolerance_ratio": 0.0008936834980863459,
+      "timepoints": 501
+    },
+    {
+      "case": "decay_extrema_5_0.01",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 10,
+        "translation": 10,
+        "decay_m": 5,
+        "decay_p": 0.01,
+        "duration": 300
+      },
+      "passed": true,
+      "max_absolute_error": 1.0968335573124932e-08,
+      "max_tolerance_ratio": 0.005163469625186244,
+      "timepoints": 501
+    },
+    {
+      "case": "decay_extrema_5_5",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 10,
+        "translation": 10,
+        "decay_m": 5,
+        "decay_p": 5,
+        "duration": 300
+      },
+      "passed": true,
+      "max_absolute_error": 1.1170091518408753e-09,
+      "max_tolerance_ratio": 0.0005529748273382166,
+      "timepoints": 501
+    },
+    {
+      "case": "equal_decay",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.2,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 7.745981633888732e-10,
+      "max_tolerance_ratio": 2.740042650259238e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "near_equal_plus_1.1e-10",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.2,
+        "decay_p": 0.20000000011000002,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 7.785985189912026e-10,
+      "max_tolerance_ratio": 2.7525429742422442e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "near_equal_minus_1.1e-10",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.20000000011000002,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 7.795328826887271e-10,
+      "max_tolerance_ratio": 2.756666684150277e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "near_equal_plus_1e-08",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.2,
+        "decay_p": 0.20000001,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 7.785310174313054e-10,
+      "max_tolerance_ratio": 2.7523044675073656e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "near_equal_minus_1e-08",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.20000001,
+        "decay_p": 0.2,
+        "duration": 40.0
+      },
+      "passed": true,
+      "max_absolute_error": 7.751417285817297e-10,
+      "max_tolerance_ratio": 2.7395177894586883e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "duration_1",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 1
+      },
+      "passed": true,
+      "max_absolute_error": 1.7471024627013776e-12,
+      "max_tolerance_ratio": 3.3756443150412215e-06,
+      "timepoints": 501
+    },
+    {
+      "case": "duration_300",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8,
+        "input_b": 0.6,
+        "transcription": 2.0,
+        "translation": 1.2,
+        "decay_m": 0.4,
+        "decay_p": 0.2,
+        "duration": 300
+      },
+      "passed": true,
+      "max_absolute_error": 5.9442424316102915e-09,
+      "max_tolerance_ratio": 0.0004099477537361009,
+      "timepoints": 501
+    },
+    {
+      "case": "random_0",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.23315797494420543,
+        "input_b": 0.8011555972857791,
+        "transcription": 7.340435075131935,
+        "translation": 9.95295042225114,
+        "decay_m": 1.6536405956968194,
+        "decay_p": 1.641653683929302,
+        "duration": 76.87337557575928
+      },
+      "passed": true,
+      "max_absolute_error": 1.3110884822253865e-08,
+      "max_tolerance_ratio": 0.0006322310364767924,
+      "timepoints": 501
+    },
+    {
+      "case": "random_1",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.16631837481798784,
+        "input_b": 0.7644732181219708,
+        "transcription": 0.025685339107317517,
+        "translation": 5.643816852060388,
+        "decay_m": 1.480340149437397,
+        "decay_p": 2.2095852001639353,
+        "duration": 234.8069524388582
+      },
+      "passed": true,
+      "max_absolute_error": 2.2965122858931153e-11,
+      "max_tolerance_ratio": 0.0001693387789936399,
+      "timepoints": 501
+    },
+    {
+      "case": "random_2",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.34511618532826793,
+        "input_b": 0.29904686740120123,
+        "transcription": 7.57603176627382,
+        "translation": 6.796565283733697,
+        "decay_m": 0.43483610450317156,
+        "decay_p": 1.599980066276261,
+        "duration": 258.87052359498165
+      },
+      "passed": true,
+      "max_absolute_error": 1.78594277144839e-08,
+      "max_tolerance_ratio": 0.00044496942606643016,
+      "timepoints": 501
+    },
+    {
+      "case": "random_3",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.29563814903220875,
+        "input_b": 0.05787349085796256,
+        "transcription": 3.8668205690302395,
+        "translation": 8.437689001704124,
+        "decay_m": 1.9798022558505246,
+        "decay_p": 2.7226341199093946,
+        "duration": 12.693752335499115
+      },
+      "passed": true,
+      "max_absolute_error": 7.617995123609944e-11,
+      "max_tolerance_ratio": 3.857447672941623e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "random_4",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.17987884452685843,
+        "input_b": 0.6021250278748043,
+        "transcription": 7.892769431214094,
+        "translation": 8.035411131522585,
+        "decay_m": 1.68457299901696,
+        "decay_p": 4.402304706436116,
+        "duration": 182.5975040632139
+      },
+      "passed": true,
+      "max_absolute_error": 2.309525903854137e-09,
+      "max_tolerance_ratio": 0.0004679729841640467,
+      "timepoints": 501
+    },
+    {
+      "case": "random_5",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.5202672348164781,
+        "input_b": 0.6757651309542296,
+        "transcription": 8.951796397752387,
+        "translation": 4.299040071679087,
+        "decay_m": 1.5816672567159762,
+        "decay_p": 2.4450634598837717,
+        "duration": 162.82761139240284
+      },
+      "passed": true,
+      "max_absolute_error": 2.6899567018290327e-09,
+      "max_tolerance_ratio": 0.0005374846829552422,
+      "timepoints": 501
+    },
+    {
+      "case": "random_6",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.16017860938978634,
+        "input_b": 0.6425418982016443,
+        "transcription": 5.297408110032132,
+        "translation": 4.1281824672638,
+        "decay_m": 3.9111280463737095,
+        "decay_p": 2.1187190086114165,
+        "duration": 147.82479705373353
+      },
+      "passed": true,
+      "max_absolute_error": 8.291620723355209e-10,
+      "max_tolerance_ratio": 0.0003579641588475617,
+      "timepoints": 501
+    },
+    {
+      "case": "random_7",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.5502729357405636,
+        "input_b": 0.5893767266453361,
+        "transcription": 4.102661508700336,
+        "translation": 2.994921009720921,
+        "decay_m": 1.2201013236843337,
+        "decay_p": 4.094104864824849,
+        "duration": 81.29294539731497
+      },
+      "passed": true,
+      "max_absolute_error": 1.0750493828481922e-09,
+      "max_tolerance_ratio": 0.0008912478210105147,
+      "timepoints": 501
+    },
+    {
+      "case": "random_8",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.05178415004176118,
+        "input_b": 0.030684489958478278,
+        "transcription": 6.626515325267603,
+        "translation": 2.2606313702885537,
+        "decay_m": 4.400887464243352,
+        "decay_p": 3.3883342922711623,
+        "duration": 1.4496553525511344
+      },
+      "passed": true,
+      "max_absolute_error": 1.82709403162562e-11,
+      "max_tolerance_ratio": 1.6916195945443226e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "random_9",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.8576216674680034,
+        "input_b": 0.8778070253978616,
+        "transcription": 9.044794113999155,
+        "translation": 5.262890806977737,
+        "decay_m": 0.5729366513695425,
+        "decay_p": 4.142381654479781,
+        "duration": 11.965703242543068
+      },
+      "passed": true,
+      "max_absolute_error": 2.3085888756213535e-09,
+      "max_tolerance_ratio": 0.00014110970800784077,
+      "timepoints": 501
+    },
+    {
+      "case": "random_10",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.22291696790430837,
+        "input_b": 0.39661167660743035,
+        "transcription": 7.724218260375052,
+        "translation": 7.180972556854926,
+        "decay_m": 2.842738247287341,
+        "decay_p": 1.2514858749001625,
+        "duration": 11.828828501928193
+      },
+      "passed": true,
+      "max_absolute_error": 1.0593215193921424e-10,
+      "max_tolerance_ratio": 2.4866344002362507e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "random_11",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.9036898499157456,
+        "input_b": 0.8147690635570691,
+        "transcription": 9.808655295971167,
+        "translation": 7.7871205596608215,
+        "decay_m": 2.007342932166799,
+        "decay_p": 0.5486655654006828,
+        "duration": 292.6508337323136
+      },
+      "passed": true,
+      "max_absolute_error": 2.629336393056292e-08,
+      "max_tolerance_ratio": 0.0005139080939319334,
+      "timepoints": 501
+    },
+    {
+      "case": "random_12",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.3292031064861005,
+        "input_b": 0.1576730740341581,
+        "transcription": 5.70477752244988,
+        "translation": 8.776396864622157,
+        "decay_m": 3.454571878009939,
+        "decay_p": 2.0703585033016365,
+        "duration": 186.40059013312955
+      },
+      "passed": true,
+      "max_absolute_error": 1.329024001961443e-09,
+      "max_tolerance_ratio": 0.0004225954893839349,
+      "timepoints": 501
+    },
+    {
+      "case": "random_13",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.7888135879363581,
+        "input_b": 0.22706846486112542,
+        "transcription": 3.7809221780542757,
+        "translation": 5.048769663581618,
+        "decay_m": 0.5702267661493541,
+        "decay_p": 3.7230382819463723,
+        "duration": 155.74876086292608
+      },
+      "passed": true,
+      "max_absolute_error": 2.4077948523881787e-09,
+      "max_tolerance_ratio": 0.0004004071774107417,
+      "timepoints": 501
+    },
+    {
+      "case": "random_14",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.7000016342960969,
+        "input_b": 0.7115087619798713,
+        "transcription": 6.444267610227672,
+        "translation": 7.267825372276925,
+        "decay_m": 4.368953775573792,
+        "decay_p": 2.0335160494635294,
+        "duration": 61.14825642094866
+      },
+      "passed": true,
+      "max_absolute_error": 2.4500401707427955e-09,
+      "max_tolerance_ratio": 0.0004984339289810496,
+      "timepoints": 501
+    },
+    {
+      "case": "random_15",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.2976400402927989,
+        "input_b": 0.351910750570981,
+        "transcription": 9.935966987511083,
+        "translation": 1.1897844818716852,
+        "decay_m": 3.8047811628739394,
+        "decay_p": 3.6472555658390884,
+        "duration": 71.41213520157895
+      },
+      "passed": true,
+      "max_absolute_error": 5.82657255776553e-11,
+      "max_tolerance_ratio": 0.00030791104263514754,
+      "timepoints": 501
+    },
+    {
+      "case": "random_16",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.41615012567220455,
+        "input_b": 0.9048330859085069,
+        "transcription": 1.8500801515440757,
+        "translation": 3.633404599114447,
+        "decay_m": 3.58650980489271,
+        "decay_p": 2.7137158283878424,
+        "duration": 131.93660804914643
+      },
+      "passed": true,
+      "max_absolute_error": 1.9340157253466828e-10,
+      "max_tolerance_ratio": 0.0003843088979751251,
+      "timepoints": 501
+    },
+    {
+      "case": "random_17",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.08681944938003938,
+        "input_b": 0.31268657397182475,
+        "transcription": 5.958683551762817,
+        "translation": 2.132813136060676,
+        "decay_m": 1.3278462813033252,
+        "decay_p": 4.645820016880674,
+        "duration": 168.78513758375115
+      },
+      "passed": true,
+      "max_absolute_error": 3.0219569902012466e-11,
+      "max_tolerance_ratio": 0.00019380625367015322,
+      "timepoints": 501
+    },
+    {
+      "case": "random_18",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.24763336594138008,
+        "input_b": 0.3874722690282745,
+        "transcription": 1.098488823349305,
+        "translation": 0.29984328997939014,
+        "decay_m": 1.3585404269956258,
+        "decay_p": 0.762242678837542,
+        "duration": 173.73986290974634
+      },
+      "passed": true,
+      "max_absolute_error": 2.239973762030445e-10,
+      "max_tolerance_ratio": 0.00033193326141632123,
+      "timepoints": 501
+    },
+    {
+      "case": "random_19",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.026680924068987144,
+        "input_b": 0.18869436846091303,
+        "transcription": 0.001745783001736445,
+        "translation": 2.536605418057359,
+        "decay_m": 1.9058933271682155,
+        "decay_p": 2.743723218990887,
+        "duration": 28.743002005551844
+      },
+      "passed": true,
+      "max_absolute_error": 3.1577195285653614e-12,
+      "max_tolerance_ratio": 3.152238961409991e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "random_20",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.6694678204206231,
+        "input_b": 0.6234322929407661,
+        "transcription": 7.362275849486746,
+        "translation": 7.2664410603188525,
+        "decay_m": 4.38174680564455,
+        "decay_p": 4.033876398552326,
+        "duration": 35.26900449904349
+      },
+      "passed": true,
+      "max_absolute_error": 5.778728606742334e-10,
+      "max_tolerance_ratio": 0.0004238992605892946,
+      "timepoints": 501
+    },
+    {
+      "case": "random_21",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.5477689865378382,
+        "input_b": 0.09074060658764715,
+        "transcription": 6.045752059431516,
+        "translation": 8.135828153076341,
+        "decay_m": 2.822314123903084,
+        "decay_p": 2.4596167537684295,
+        "duration": 290.38655212738314
+      },
+      "passed": true,
+      "max_absolute_error": 2.003255339388943e-10,
+      "max_tolerance_ratio": 0.0004430107461572175,
+      "timepoints": 501
+    },
+    {
+      "case": "random_22",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.3816388556188539,
+        "input_b": 0.08936215797984481,
+        "transcription": 9.349615532261152,
+        "translation": 0.8476198446315886,
+        "decay_m": 0.7797114817460933,
+        "decay_p": 2.213143980021254,
+        "duration": 143.03137679189587
+      },
+      "passed": true,
+      "max_absolute_error": 1.4576282403311325e-09,
+      "max_tolerance_ratio": 0.0004958193537220315,
+      "timepoints": 501
+    },
+    {
+      "case": "random_23",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.21925097013732608,
+        "input_b": 0.722983663806535,
+        "transcription": 9.576472459288128,
+        "translation": 0.04017406814171842,
+        "decay_m": 1.732825057204623,
+        "decay_p": 2.6994565849682717,
+        "duration": 193.19375048346416
+      },
+      "passed": true,
+      "max_absolute_error": 3.5200967141157946e-11,
+      "max_tolerance_ratio": 0.00021404146401192778,
+      "timepoints": 501
+    },
+    {
+      "case": "random_24",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.7679320503378588,
+        "input_b": 0.528460310543494,
+        "transcription": 7.175844333597194,
+        "translation": 7.274282688410112,
+        "decay_m": 0.9898828309631494,
+        "decay_p": 0.8839914523797971,
+        "duration": 241.22211616381847
+      },
+      "passed": true,
+      "max_absolute_error": 3.08991161546146e-08,
+      "max_tolerance_ratio": 0.0005805365641269608,
+      "timepoints": 501
+    },
+    {
+      "case": "random_25",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.6365765838313302,
+        "input_b": 0.6847927287842477,
+        "transcription": 0.9189079374518927,
+        "translation": 6.318407524565407,
+        "decay_m": 1.6664196132922438,
+        "decay_p": 1.0551392945912954,
+        "duration": 239.520091784024
+      },
+      "passed": true,
+      "max_absolute_error": 7.313936123409803e-10,
+      "max_tolerance_ratio": 0.0004616350514102112,
+      "timepoints": 501
+    },
+    {
+      "case": "random_26",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.2377034714853664,
+        "input_b": 0.23937328430604643,
+        "transcription": 7.212700309446493,
+        "translation": 8.617778775003943,
+        "decay_m": 3.9686087990392633,
+        "decay_p": 0.08798602312386747,
+        "duration": 134.646487501731
+      },
+      "passed": true,
+      "max_absolute_error": 7.858347430556023e-07,
+      "max_tolerance_ratio": 0.4093540166196791,
+      "timepoints": 501
+    },
+    {
+      "case": "random_27",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.8033973239380622,
+        "input_b": 0.6382055373269416,
+        "transcription": 5.520566920528687,
+        "translation": 2.6824385984905907,
+        "decay_m": 2.110283947008888,
+        "decay_p": 4.344474300705249,
+        "duration": 55.15788089508969
+      },
+      "passed": true,
+      "max_absolute_error": 4.709805878633233e-10,
+      "max_tolerance_ratio": 0.0006099524888112186,
+      "timepoints": 501
+    },
+    {
+      "case": "random_28",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.2295829563585775,
+        "input_b": 0.47503374442621427,
+        "transcription": 2.884133470906076,
+        "translation": 9.676745749622533,
+        "decay_m": 2.265547372012888,
+        "decay_p": 3.911704432227835,
+        "duration": 22.178613717069414
+      },
+      "passed": true,
+      "max_absolute_error": 1.6508221456490446e-09,
+      "max_tolerance_ratio": 0.0010114735722968544,
+      "timepoints": 501
+    },
+    {
+      "case": "random_29",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.4584664166502287,
+        "input_b": 0.6070017190553834,
+        "transcription": 4.386764291792751,
+        "translation": 8.422003418030199,
+        "decay_m": 4.663621267253245,
+        "decay_p": 2.3178862027680522,
+        "duration": 15.977433096020794
+      },
+      "passed": true,
+      "max_absolute_error": 9.420630942003072e-10,
+      "max_tolerance_ratio": 0.0005121942274281894,
+      "timepoints": 501
+    },
+    {
+      "case": "random_30",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.31801507112287986,
+        "input_b": 0.4557142051821995,
+        "transcription": 8.652207590090802,
+        "translation": 7.143896715953244,
+        "decay_m": 3.9968379561572047,
+        "decay_p": 3.439447126943054,
+        "duration": 60.56558084671164
+      },
+      "passed": true,
+      "max_absolute_error": 1.4847314488974916e-09,
+      "max_tolerance_ratio": 0.0005072003012282737,
+      "timepoints": 501
+    },
+    {
+      "case": "random_31",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.7401185057766438,
+        "input_b": 0.7252086381734352,
+        "transcription": 0.015479667894664484,
+        "translation": 9.583419551698093,
+        "decay_m": 0.6712743876689962,
+        "decay_p": 2.2112405773839696,
+        "duration": 236.22110090329483
+      },
+      "passed": true,
+      "max_absolute_error": 2.5081284271699644e-11,
+      "max_tolerance_ratio": 0.00018023117357529643,
+      "timepoints": 501
+    },
+    {
+      "case": "random_32",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.5206425372216221,
+        "input_b": 0.3221117424923179,
+        "transcription": 6.831644266184086,
+        "translation": 2.5029498346460413,
+        "decay_m": 1.6141770855574362,
+        "decay_p": 1.8980290408243576,
+        "duration": 133.70170325962758
+      },
+      "passed": true,
+      "max_absolute_error": 1.455005449457758e-09,
+      "max_tolerance_ratio": 0.0005242575529683855,
+      "timepoints": 501
+    },
+    {
+      "case": "random_33",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.9865503920502912,
+        "input_b": 0.06245324140047892,
+        "transcription": 2.5878262127183804,
+        "translation": 8.266551794170521,
+        "decay_m": 4.79613302614623,
+        "decay_p": 2.783106900002005,
+        "duration": 247.64005317318106
+      },
+      "passed": true,
+      "max_absolute_error": 4.2662207100363503e-10,
+      "max_tolerance_ratio": 0.0002693838760082703,
+      "timepoints": 501
+    },
+    {
+      "case": "random_34",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.5637549727186972,
+        "input_b": 0.161003035870094,
+        "transcription": 3.148685557184278,
+        "translation": 4.888756718761853,
+        "decay_m": 0.24752074937399632,
+        "decay_p": 2.8135815018302717,
+        "duration": 141.8296606562845
+      },
+      "passed": true,
+      "max_absolute_error": 3.365638390206982e-08,
+      "max_tolerance_ratio": 0.01597944176470671,
+      "timepoints": 501
+    },
+    {
+      "case": "random_35",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.6662923896845465,
+        "input_b": 0.6597486414718597,
+        "transcription": 5.258529997670792,
+        "translation": 1.7860530952985132,
+        "decay_m": 4.2965250997104185,
+        "decay_p": 0.5672614624257991,
+        "duration": 36.19135030251562
+      },
+      "passed": true,
+      "max_absolute_error": 2.1084511914182258e-10,
+      "max_tolerance_ratio": 0.0003259186624388415,
+      "timepoints": 501
+    },
+    {
+      "case": "random_36",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.6739739568492634,
+        "input_b": 0.41743419793124537,
+        "transcription": 0.14232483160769416,
+        "translation": 2.9038716026358724,
+        "decay_m": 4.049928887747897,
+        "decay_p": 0.5811825497645177,
+        "duration": 70.91400630037396
+      },
+      "passed": true,
+      "max_absolute_error": 1.8249396785408045e-11,
+      "max_tolerance_ratio": 0.00016373429627155732,
+      "timepoints": 501
+    },
+    {
+      "case": "random_37",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.06685404110439197,
+        "input_b": 0.8095462274919784,
+        "transcription": 6.3020528383513685,
+        "translation": 0.30069709859829596,
+        "decay_m": 3.024520998913738,
+        "decay_p": 4.348427548718577,
+        "duration": 83.18506892816416
+      },
+      "passed": true,
+      "max_absolute_error": 6.766678883884936e-11,
+      "max_tolerance_ratio": 0.00030971752379000805,
+      "timepoints": 501
+    },
+    {
+      "case": "random_38",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.4633234219930715,
+        "input_b": 0.8821094437813762,
+        "transcription": 8.200812760860606,
+        "translation": 6.022015811708106,
+        "decay_m": 2.3248953544862885,
+        "decay_p": 2.250212070881942,
+        "duration": 123.05566438853504
+      },
+      "passed": true,
+      "max_absolute_error": 2.0057084881841547e-09,
+      "max_tolerance_ratio": 0.00039446790261231797,
+      "timepoints": 501
+    },
+    {
+      "case": "random_39",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.13752908763021643,
+        "input_b": 0.11649353419561803,
+        "transcription": 3.4120307782465686,
+        "translation": 4.953682363751058,
+        "decay_m": 2.9736337993652784,
+        "decay_p": 0.9143118889749877,
+        "duration": 225.78248167522963
+      },
+      "passed": true,
+      "max_absolute_error": 3.610347576454842e-10,
+      "max_tolerance_ratio": 0.00040228898291088224,
+      "timepoints": 501
+    },
+    {
+      "case": "random_40",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.23263973828191542,
+        "input_b": 0.08497244493295986,
+        "transcription": 7.398712437212619,
+        "translation": 8.130909097764613,
+        "decay_m": 0.5515043816193527,
+        "decay_p": 4.71083456023543,
+        "duration": 275.98536856732244
+      },
+      "passed": true,
+      "max_absolute_error": 9.42433953099453e-09,
+      "max_tolerance_ratio": 0.0013469823112716255,
+      "timepoints": 501
+    },
+    {
+      "case": "random_41",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.5202892423428951,
+        "input_b": 0.5233078364178031,
+        "transcription": 3.833839020274529,
+        "translation": 3.6347236166524177,
+        "decay_m": 0.08127330303660568,
+        "decay_p": 1.4713906262782284,
+        "duration": 280.19078180173364
+      },
+      "passed": true,
+      "max_absolute_error": 3.868415774377354e-06,
+      "max_tolerance_ratio": 0.04299178431309485,
+      "timepoints": 501
+    },
+    {
+      "case": "random_42",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.27138367214642456,
+        "input_b": 0.2971788521006501,
+        "transcription": 0.15622891308694653,
+        "translation": 7.223159754684884,
+        "decay_m": 3.0423013496816362,
+        "decay_p": 0.58745908075439,
+        "duration": 276.3939627652222
+      },
+      "passed": true,
+      "max_absolute_error": 4.7760462251744684e-11,
+      "max_tolerance_ratio": 0.0001297972239916322,
+      "timepoints": 501
+    },
+    {
+      "case": "random_43",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.3962941148184207,
+        "input_b": 0.4857145523307512,
+        "transcription": 3.5592007939554096,
+        "translation": 4.3114483158091454,
+        "decay_m": 4.786145106745193,
+        "decay_p": 2.748831634310529,
+        "duration": 132.84127306714308
+      },
+      "passed": true,
+      "max_absolute_error": 4.955604815393144e-10,
+      "max_tolerance_ratio": 0.0006162514264386502,
+      "timepoints": 501
+    },
+    {
+      "case": "random_44",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.920118894848825,
+        "input_b": 0.7787540158640311,
+        "transcription": 5.219661577617398,
+        "translation": 7.340075464612892,
+        "decay_m": 0.6176077169591464,
+        "decay_p": 4.468998575559427,
+        "duration": 273.8946202563583
+      },
+      "passed": true,
+      "max_absolute_error": 6.207272207348069e-08,
+      "max_tolerance_ratio": 0.0061786278413957785,
+      "timepoints": 501
+    },
+    {
+      "case": "random_45",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.6371150488588755,
+        "input_b": 0.19905384850024876,
+        "transcription": 6.400320876248112,
+        "translation": 6.970672964445061,
+        "decay_m": 0.1532586121377266,
+        "decay_p": 0.4735161236605522,
+        "duration": 281.3488704597009
+      },
+      "passed": true,
+      "max_absolute_error": 2.8194037327011756e-08,
+      "max_tolerance_ratio": 0.000361156436680248,
+      "timepoints": 501
+    },
+    {
+      "case": "random_46",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.019235505081348303,
+        "input_b": 0.5646853449088628,
+        "transcription": 4.098950326125699,
+        "translation": 3.4984280445146965,
+        "decay_m": 0.3898622089268975,
+        "decay_p": 3.8288716771244746,
+        "duration": 253.90816765407737
+      },
+      "passed": true,
+      "max_absolute_error": 1.6838768601701304e-08,
+      "max_tolerance_ratio": 0.0030611912463655946,
+      "timepoints": 501
+    },
+    {
+      "case": "random_47",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.7561761593668788,
+        "input_b": 0.22969734258346874,
+        "transcription": 2.346154686551336,
+        "translation": 3.487382321397934,
+        "decay_m": 4.646043353399635,
+        "decay_p": 3.0940518163536854,
+        "duration": 118.07829953627395
+      },
+      "passed": true,
+      "max_absolute_error": 5.7284788024247746e-11,
+      "max_tolerance_ratio": 0.00023990785778358372,
+      "timepoints": 501
+    },
+    {
+      "case": "random_48",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.3597361899368805,
+        "input_b": 0.007299784004713983,
+        "transcription": 9.007388241150263,
+        "translation": 2.9000929069966332,
+        "decay_m": 4.519798638392013,
+        "decay_p": 4.669291157467017,
+        "duration": 294.43194266457994
+      },
+      "passed": true,
+      "max_absolute_error": 6.888996040288475e-10,
+      "max_tolerance_ratio": 0.0007718756215906847,
+      "timepoints": 501
+    },
+    {
+      "case": "random_49",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.2999220988652439,
+        "input_b": 0.5557749150540003,
+        "transcription": 2.543910276783221,
+        "translation": 1.1583146727801674,
+        "decay_m": 1.9164078505485445,
+        "decay_p": 3.7326099090647338,
+        "duration": 90.3753953715207
+      },
+      "passed": true,
+      "max_absolute_error": 1.4405199255662637e-10,
+      "max_tolerance_ratio": 0.0003753055946156751,
+      "timepoints": 501
+    },
+    {
+      "case": "random_50",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.7348623078137043,
+        "input_b": 0.19391451056028397,
+        "transcription": 1.9476854063050397,
+        "translation": 0.13788625665019927,
+        "decay_m": 2.5978763101372855,
+        "decay_p": 0.9649895960540789,
+        "duration": 222.27606891056647
+      },
+      "passed": true,
+      "max_absolute_error": 2.671024859624005e-11,
+      "max_tolerance_ratio": 0.00020801825244943053,
+      "timepoints": 501
+    },
+    {
+      "case": "random_51",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.4104210538527512,
+        "input_b": 0.3173813121537107,
+        "transcription": 2.6199968573459085,
+        "translation": 2.2677370671910957,
+        "decay_m": 1.5248095513494158,
+        "decay_p": 4.215071133347403,
+        "duration": 6.378815241740255
+      },
+      "passed": true,
+      "max_absolute_error": 4.365463546207593e-11,
+      "max_tolerance_ratio": 7.019266172213682e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "random_52",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.621894581672799,
+        "input_b": 0.14327427364632173,
+        "transcription": 1.712725512347697,
+        "translation": 9.909484577087579,
+        "decay_m": 0.8936835709090079,
+        "decay_p": 2.682800955729251,
+        "duration": 59.45132663567994
+      },
+      "passed": true,
+      "max_absolute_error": 1.484457889944224e-09,
+      "max_tolerance_ratio": 0.0005346362305693833,
+      "timepoints": 501
+    },
+    {
+      "case": "random_53",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.4097352908081876,
+        "input_b": 0.2809647359422809,
+        "transcription": 2.879088084004059,
+        "translation": 9.407826969921706,
+        "decay_m": 2.2608892662850413,
+        "decay_p": 4.9118014885158106,
+        "duration": 65.57511660147205
+      },
+      "passed": true,
+      "max_absolute_error": 1.3246087560148112e-10,
+      "max_tolerance_ratio": 0.00034785941708813855,
+      "timepoints": 501
+    },
+    {
+      "case": "random_54",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.26996724663430693,
+        "input_b": 0.2722599609167974,
+        "transcription": 6.815371129046717,
+        "translation": 5.952609745966998,
+        "decay_m": 1.9323767101133797,
+        "decay_p": 3.1628987888857822,
+        "duration": 140.30859801355794
+      },
+      "passed": true,
+      "max_absolute_error": 1.4661605263199817e-09,
+      "max_tolerance_ratio": 0.0005383574281873168,
+      "timepoints": 501
+    },
+    {
+      "case": "random_55",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.26569797613579915,
+        "input_b": 0.7583465437572268,
+        "transcription": 8.20904194054117,
+        "translation": 5.538520374156933,
+        "decay_m": 1.8701157325989202,
+        "decay_p": 2.65755139695561,
+        "duration": 276.3274580809193
+      },
+      "passed": true,
+      "max_absolute_error": 2.8576776500699452e-09,
+      "max_tolerance_ratio": 0.0004942704673455706,
+      "timepoints": 501
+    },
+    {
+      "case": "random_56",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.6913486122724196,
+        "input_b": 0.8164227062748876,
+        "transcription": 6.2146447028567415,
+        "translation": 6.925102379070543,
+        "decay_m": 4.9237265251122695,
+        "decay_p": 3.292406171608467,
+        "duration": 9.100229305846675
+      },
+      "passed": true,
+      "max_absolute_error": 4.2591263849089955e-11,
+      "max_tolerance_ratio": 1.69249814482319e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "random_57",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.33165905876167834,
+        "input_b": 0.37377222546931443,
+        "transcription": 8.222446445232626,
+        "translation": 8.898399538947118,
+        "decay_m": 2.182828434941961,
+        "decay_p": 2.0152687521166524,
+        "duration": 65.80726350519058
+      },
+      "passed": true,
+      "max_absolute_error": 3.5482958793409125e-09,
+      "max_tolerance_ratio": 0.00046025327522625415,
+      "timepoints": 501
+    },
+    {
+      "case": "random_58",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.2629335042778964,
+        "input_b": 0.1760270050435926,
+        "transcription": 3.517557953890915,
+        "translation": 9.52861566828515,
+        "decay_m": 0.1620255256046847,
+        "decay_p": 3.622797474779393,
+        "duration": 226.42179582201084
+      },
+      "passed": true,
+      "max_absolute_error": 1.480172649337419e-06,
+      "max_tolerance_ratio": 0.03509091666996893,
+      "timepoints": 501
+    },
+    {
+      "case": "random_59",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.7304674648941359,
+        "input_b": 0.919976566944432,
+        "transcription": 0.7216039226197102,
+        "translation": 5.553340521271948,
+        "decay_m": 4.9341668203932,
+        "decay_p": 4.509224100201426,
+        "duration": 116.14267102424908
+      },
+      "passed": true,
+      "max_absolute_error": 8.877795720785286e-11,
+      "max_tolerance_ratio": 0.00032139713266101007,
+      "timepoints": 501
+    },
+    {
+      "case": "random_60",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.5808855856721372,
+        "input_b": 0.6503963720047304,
+        "transcription": 3.6890208886730047,
+        "translation": 8.326008394694384,
+        "decay_m": 2.7313501833311937,
+        "decay_p": 1.406897726099711,
+        "duration": 70.23452120893324
+      },
+      "passed": true,
+      "max_absolute_error": 2.2397612653435317e-09,
+      "max_tolerance_ratio": 0.00032358044733777415,
+      "timepoints": 501
+    },
+    {
+      "case": "random_61",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.9683142773231304,
+        "input_b": 0.06512940767477693,
+        "transcription": 2.7790280086716077,
+        "translation": 9.367763308556661,
+        "decay_m": 2.551555404018553,
+        "decay_p": 3.3693646632752805,
+        "duration": 122.40255922899364
+      },
+      "passed": true,
+      "max_absolute_error": 1.3044996194366831e-09,
+      "max_tolerance_ratio": 0.0004581262474175758,
+      "timepoints": 501
+    },
+    {
+      "case": "random_62",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.1785274816703638,
+        "input_b": 0.8868900651240366,
+        "transcription": 1.381781172266301,
+        "translation": 1.378637356176683,
+        "decay_m": 0.0983597116759291,
+        "decay_p": 4.728681354822195,
+        "duration": 246.2631799473277
+      },
+      "passed": true,
+      "max_absolute_error": 1.2445859920440228e-06,
+      "max_tolerance_ratio": 0.5456369747301181,
+      "timepoints": 501
+    },
+    {
+      "case": "random_63",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.08183905076645981,
+        "input_b": 0.9411262115059462,
+        "transcription": 4.12834518214232,
+        "translation": 9.108060839469946,
+        "decay_m": 4.300170388875699,
+        "decay_p": 3.961510185787582,
+        "duration": 133.2244743703561
+      },
+      "passed": true,
+      "max_absolute_error": 8.690403952016368e-10,
+      "max_tolerance_ratio": 0.00043065530243959106,
+      "timepoints": 501
+    },
+    {
+      "case": "random_64",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8428237259223045,
+        "input_b": 0.22034091325325433,
+        "transcription": 8.779680262966604,
+        "translation": 1.102689275578489,
+        "decay_m": 2.0717487183857104,
+        "decay_p": 2.491289346768383,
+        "duration": 253.35507820377734
+      },
+      "passed": true,
+      "max_absolute_error": 3.5234759554469974e-10,
+      "max_tolerance_ratio": 0.0007858949249968828,
+      "timepoints": 501
+    },
+    {
+      "case": "random_65",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.34348758615429364,
+        "input_b": 0.7016360551702849,
+        "transcription": 8.857101911544241,
+        "translation": 4.582960523926966,
+        "decay_m": 4.926055993622205,
+        "decay_p": 2.6564313125148726,
+        "duration": 19.91723535448522
+      },
+      "passed": true,
+      "max_absolute_error": 8.330458545202646e-11,
+      "max_tolerance_ratio": 9.828420178071651e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "random_66",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.3461769283066697,
+        "input_b": 0.6535976066803915,
+        "transcription": 1.726088110907913,
+        "translation": 4.042168714076184,
+        "decay_m": 3.774839824636477,
+        "decay_p": 4.606132923609401,
+        "duration": 158.79929594099846
+      },
+      "passed": true,
+      "max_absolute_error": 9.741418782738265e-11,
+      "max_tolerance_ratio": 0.00026883036814722046,
+      "timepoints": 501
+    },
+    {
+      "case": "random_67",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.2676577154777343,
+        "input_b": 0.8740523810181258,
+        "transcription": 0.9198216600430986,
+        "translation": 0.22150742124083633,
+        "decay_m": 4.141460471691645,
+        "decay_p": 0.46227975885589223,
+        "duration": 223.3779289147613
+      },
+      "passed": true,
+      "max_absolute_error": 1.4469539455497227e-10,
+      "max_tolerance_ratio": 0.00047973550982996374,
+      "timepoints": 501
+    },
+    {
+      "case": "random_68",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.3538114377839837,
+        "input_b": 0.6168324354442389,
+        "transcription": 3.508102101445539,
+        "translation": 3.0132264336431245,
+        "decay_m": 1.9506070608344825,
+        "decay_p": 0.7265103541091725,
+        "duration": 296.50872806238795
+      },
+      "passed": true,
+      "max_absolute_error": 4.151474719549242e-10,
+      "max_tolerance_ratio": 0.0003424559820436343,
+      "timepoints": 501
+    },
+    {
+      "case": "random_69",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.027745358479339566,
+        "input_b": 0.9312146563163822,
+        "transcription": 1.3043984092197214,
+        "translation": 6.013092418305535,
+        "decay_m": 4.829237511766071,
+        "decay_p": 1.7049707312823623,
+        "duration": 58.544449353811295
+      },
+      "passed": true,
+      "max_absolute_error": 2.2015134160113803e-10,
+      "max_tolerance_ratio": 0.0003315085850020392,
+      "timepoints": 501
+    },
+    {
+      "case": "random_70",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.4901131272559962,
+        "input_b": 0.49505390287026885,
+        "transcription": 6.7422641832282775,
+        "translation": 8.573061661880343,
+        "decay_m": 2.2907112211106337,
+        "decay_p": 2.9265296063583457,
+        "duration": 161.5516990324658
+      },
+      "passed": true,
+      "max_absolute_error": 2.9527864597866937e-09,
+      "max_tolerance_ratio": 0.0006695265791348312,
+      "timepoints": 501
+    },
+    {
+      "case": "random_71",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.9144392922849218,
+        "input_b": 0.3228232199817066,
+        "transcription": 7.298182337540483,
+        "translation": 1.2056570657530108,
+        "decay_m": 2.3445729962706925,
+        "decay_p": 1.2397405789693703,
+        "duration": 203.62626203555624
+      },
+      "passed": true,
+      "max_absolute_error": 3.478184407157414e-10,
+      "max_tolerance_ratio": 0.00035004401907789333,
+      "timepoints": 501
+    },
+    {
+      "case": "random_72",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.9930129398908184,
+        "input_b": 0.006008433132738689,
+        "transcription": 0.22192136432146126,
+        "translation": 9.540995248194285,
+        "decay_m": 3.5708433892722233,
+        "decay_p": 4.375726525719698,
+        "duration": 253.84318562511913
+      },
+      "passed": true,
+      "max_absolute_error": 6.555472419240982e-12,
+      "max_tolerance_ratio": 6.493986217819285e-05,
+      "timepoints": 501
+    },
+    {
+      "case": "random_73",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.4171691532074653,
+        "input_b": 0.9647722764434798,
+        "transcription": 7.271460511751322,
+        "translation": 9.415289547261105,
+        "decay_m": 0.2411449996354025,
+        "decay_p": 2.7004359873563675,
+        "duration": 95.32192402003392
+      },
+      "passed": true,
+      "max_absolute_error": 1.6426884457132473e-06,
+      "max_tolerance_ratio": 0.026764650626470377,
+      "timepoints": 501
+    },
+    {
+      "case": "random_74",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.2689381475248329,
+        "input_b": 0.749775744554544,
+        "transcription": 5.456078981328801,
+        "translation": 0.9697225000329268,
+        "decay_m": 3.745021737413625,
+        "decay_p": 4.118529392649963,
+        "duration": 264.12626263148917
+      },
+      "passed": true,
+      "max_absolute_error": 6.954478659615404e-11,
+      "max_tolerance_ratio": 0.00022353776789409068,
+      "timepoints": 501
+    },
+    {
+      "case": "random_75",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.8122619220505964,
+        "input_b": 0.858188551525309,
+        "transcription": 4.484978459423291,
+        "translation": 7.5149970780321285,
+        "decay_m": 2.587005467734568,
+        "decay_p": 4.495812256395082,
+        "duration": 61.89569910500103
+      },
+      "passed": true,
+      "max_absolute_error": 1.1682859124562128e-09,
+      "max_tolerance_ratio": 0.0005510648337200495,
+      "timepoints": 501
+    },
+    {
+      "case": "random_76",
+      "parameters": {
+        "operator": "OR",
+        "input_a": 0.5938002051539956,
+        "input_b": 0.6999973889954413,
+        "transcription": 9.228337143953414,
+        "translation": 9.011193286614732,
+        "decay_m": 1.130369856770656,
+        "decay_p": 0.3365758522089041,
+        "duration": 273.2644738676202
+      },
+      "passed": true,
+      "max_absolute_error": 3.3747596717148554e-08,
+      "max_tolerance_ratio": 0.00040897096746544487,
+      "timepoints": 501
+    },
+    {
+      "case": "random_77",
+      "parameters": {
+        "operator": "NOT_A",
+        "input_a": 0.05773796561932665,
+        "input_b": 0.33289394465407063,
+        "transcription": 3.142799676438405,
+        "translation": 0.756832086660163,
+        "decay_m": 3.744213106365711,
+        "decay_p": 2.571755946052146,
+        "duration": 207.96346811037034
+      },
+      "passed": true,
+      "max_absolute_error": 1.1407896849391364e-10,
+      "max_tolerance_ratio": 0.00022168410078598542,
+      "timepoints": 501
+    },
+    {
+      "case": "random_78",
+      "parameters": {
+        "operator": "AND",
+        "input_a": 0.19585652153493383,
+        "input_b": 0.7137319391751001,
+        "transcription": 9.924711554132715,
+        "translation": 7.168084229230809,
+        "decay_m": 3.688369014138446,
+        "decay_p": 3.200593697434428,
+        "duration": 270.80438478063246
+      },
+      "passed": true,
+      "max_absolute_error": 3.5850933333136936e-10,
+      "max_tolerance_ratio": 0.0003804130891991748,
+      "timepoints": 501
+    },
+    {
+      "case": "random_79",
+      "parameters": {
+        "operator": "XOR",
+        "input_a": 0.3882187755858766,
+        "input_b": 0.7588107496514966,
+        "transcription": 2.8817917739576315,
+        "translation": 6.444830270212764,
+        "decay_m": 1.4920101235345407,
+        "decay_p": 3.5267108441056503,
+        "duration": 168.63173938502578
+      },
+      "passed": true,
+      "max_absolute_error": 1.0596783450722569e-09,
+      "max_tolerance_ratio": 0.0005121555837855573,
+      "timepoints": 501
+    }
+  ],
+  "iupac_differences": [
+    {
+      "codon": "AAR",
+      "bioforma": "X",
+      "biopython": "K"
+    },
+    {
+      "codon": "AAY",
+      "bioforma": "X",
+      "biopython": "N"
+    },
+    {
+      "codon": "ACR",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACY",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACS",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACW",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACK",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACM",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACB",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACD",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACH",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACV",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "ACN",
+      "bioforma": "X",
+      "biopython": "T"
+    },
+    {
+      "codon": "AGR",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "AGY",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "ATY",
+      "bioforma": "X",
+      "biopython": "I"
+    },
+    {
+      "codon": "ATW",
+      "bioforma": "X",
+      "biopython": "I"
+    },
+    {
+      "codon": "ATM",
+      "bioforma": "X",
+      "biopython": "I"
+    },
+    {
+      "codon": "ATH",
+      "bioforma": "X",
+      "biopython": "I"
+    },
+    {
+      "codon": "CAR",
+      "bioforma": "X",
+      "biopython": "Q"
+    },
+    {
+      "codon": "CAY",
+      "bioforma": "X",
+      "biopython": "H"
+    },
+    {
+      "codon": "CCR",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCY",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCS",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCW",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCK",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCM",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCB",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCD",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCH",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCV",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CCN",
+      "bioforma": "X",
+      "biopython": "P"
+    },
+    {
+      "codon": "CGR",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGY",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGS",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGW",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGK",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGM",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGB",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGD",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGH",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGV",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CGN",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "CTR",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTY",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTS",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTW",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTK",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTM",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTB",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTD",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTH",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTV",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "CTN",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "GAR",
+      "bioforma": "X",
+      "biopython": "E"
+    },
+    {
+      "codon": "GAY",
+      "bioforma": "X",
+      "biopython": "D"
+    },
+    {
+      "codon": "GCR",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCY",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCS",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCW",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCK",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCM",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCB",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCD",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCH",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCV",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GCN",
+      "bioforma": "X",
+      "biopython": "A"
+    },
+    {
+      "codon": "GGR",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGY",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGS",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGW",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGK",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGM",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGB",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGD",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGH",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGV",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GGN",
+      "bioforma": "X",
+      "biopython": "G"
+    },
+    {
+      "codon": "GTR",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTY",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTS",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTW",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTK",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTM",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTB",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTD",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTH",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTV",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "GTN",
+      "bioforma": "X",
+      "biopython": "V"
+    },
+    {
+      "codon": "TAR",
+      "bioforma": "X",
+      "biopython": "*"
+    },
+    {
+      "codon": "TAY",
+      "bioforma": "X",
+      "biopython": "Y"
+    },
+    {
+      "codon": "TCR",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCY",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCS",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCW",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCK",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCM",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCB",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCD",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCH",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCV",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TCN",
+      "bioforma": "X",
+      "biopython": "S"
+    },
+    {
+      "codon": "TGY",
+      "bioforma": "X",
+      "biopython": "C"
+    },
+    {
+      "codon": "TTR",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "TTY",
+      "bioforma": "X",
+      "biopython": "F"
+    },
+    {
+      "codon": "TRA",
+      "bioforma": "X",
+      "biopython": "*"
+    },
+    {
+      "codon": "RAC",
+      "bioforma": "X",
+      "biopython": "B"
+    },
+    {
+      "codon": "RAT",
+      "bioforma": "X",
+      "biopython": "B"
+    },
+    {
+      "codon": "RAY",
+      "bioforma": "X",
+      "biopython": "B"
+    },
+    {
+      "codon": "YTA",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "YTG",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "YTR",
+      "bioforma": "X",
+      "biopython": "L"
+    },
+    {
+      "codon": "SAA",
+      "bioforma": "X",
+      "biopython": "Z"
+    },
+    {
+      "codon": "SAG",
+      "bioforma": "X",
+      "biopython": "Z"
+    },
+    {
+      "codon": "SAR",
+      "bioforma": "X",
+      "biopython": "Z"
+    },
+    {
+      "codon": "WTA",
+      "bioforma": "X",
+      "biopython": "J"
+    },
+    {
+      "codon": "MGA",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "MGG",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "MGR",
+      "bioforma": "X",
+      "biopython": "R"
+    },
+    {
+      "codon": "MTA",
+      "bioforma": "X",
+      "biopython": "J"
+    },
+    {
+      "codon": "MTC",
+      "bioforma": "X",
+      "biopython": "J"
+    },
+    {
+      "codon": "MTT",
+      "bioforma": "X",
+      "biopython": "J"
+    },
+    {
+      "codon": "MTY",
+      "bioforma": "X",
+      "biopython": "J"
+    },
+    {
+      "codon": "MTW",
+      "bioforma": "X",
+      "biopython": "J"
+    },
+    {
+      "codon": "MTM",
+      "bioforma": "X",
+      "biopython": "J"
+    },
+    {
+      "codon": "MTH",
+      "bioforma": "X",
+      "biopython": "J"
+    },
+    {
+      "codon": "HTA",
+      "bioforma": "X",
+      "biopython": "J"
+    }
+  ],
+  "source_sha256": {
+    "bioforma/__init__.py": "b63e3dc03e9cad691ec94faff583f44bd5724db5b47e6012b334f1d331323c05",
+    "bioforma/app.py": "73dae8cc47de8af286ca87f547f7a1fe2231925543bd9b5a7f4d8bded9e8c4b9",
+    "bioforma/core.py": "acc97c62f41489acde5dae0753340b4bb8f4329e26589e683a86efbb37a7b4fc",
+    "bioforma/example.py": "99035b628122ae8433a3a550cea81982d93832ad14adeb4eaeed3e3cab01d508",
+    "bioforma/guides.py": "33cf86489afe58366153e649fa78dac2ad4c0cf47260465f4de35484340fa276",
+    "bioforma/i18n.py": "0f895753fd0dc7d70d5821887860cbb2a1214d0d465f385c6c063f7222b0107b",
+    "bioforma/paths.py": "ead383cb24d6b635a8c065772f3debe61a087d27083895670d689db1d74c1b5a",
+    "bioforma/references.py": "751b3a92883dc6f8349f2eb4cda359f392e9cf16bf76a01f6f4d3bbea2c0d959",
+    "bioforma/reproducibility.py": "b0fdcdc807480ed271fbfab377ddfc453b6406737e80261b31483a6c89212651",
+    "bioforma/translations.py": "85ec6fb200174cf75bb73b2ed506a9a4fba1f4ca2ea08462c9ec3e18b3ddbee0",
+    "bioforma/viewer.py": "7adae5043507f5e9faea9fc64a6bfd4a88583661f73b33a5585f2cc382025773",
+    "requirements-validation.txt": "8f3ebea7f42ea2d5491aef4641cf1c25face77ea137d9d418bc80bc0de16fb4d",
+    "scripts/validate_independent.py": "ca9bbd5b2a2394e2ccf8410d1d2e8b533d3d8eaf3fd0016cdc7910bdfccba5b5",
+    "validacao/PROTOCOL.md": "7ec9355ba3bd1d6d8899692498c5df88cdacdc19f0f48139b20bb6fb779a59fb"
+  },
+  "fixture_manifest_sha256": "d1105fa6f3517b81fd1fe47f0e00832704ac7855e6c9aac33acdf9c1fc9ce668",
+  "limitations": [
+    "Developer-led small convenience sample; not peer review or a general accuracy estimate.",
+    "No organism/phenotype prediction, gene annotation, folding or biological validation.",
+    "PDB fixture has no altloc complexity; other PDB policies need a larger corpus.",
+    "Ambiguous translation follows conservative X policy, with comparator differences disclosed.",
+    "Independent library comparisons establish computational agreement for the measured cases only."
+  ],
+  "passed": true
+}
