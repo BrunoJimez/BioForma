@@ -1,0 +1,10 @@
+{
+  "operator": "AND",
+  "input_a": 0.8,
+  "input_b": 0.6,
+  "transcription": 2.0,
+  "translation": 1.2,
+  "decay_m": 0.4,
+  "decay_p": 0.2,
+  "duration": 40.0
+}

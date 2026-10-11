@@ -1,0 +1,126 @@
+"""Portuguese message IDs and their English translations. Data keys are not translated."""
+EN = {
+    'BioForma Studio {0} • bancada digital': 'BioForma Studio {0} • digital workbench',
+    'BioForma Studio {0} • {1}': 'BioForma Studio {0} • {1}',
+    'Sequência didática': 'Educational sequence',
+    'STUDIO  /  {0}\nBiologia em código, modelos à vista': 'STUDIO  /  {0}\nBiology in code, models in view',
+    'Salvar projeto': 'Save project', 'Abrir projeto': 'Open project',
+    'Exemplo inicial': 'Reset demo',
+    '01  Sequência + DNA 3D': '01  Sequence + 3D DNA',
+    '02  Estruturas moleculares': '02  Molecular structures',
+    '03  Circuito digital': '03  Digital circuit', 'Guia e limites': 'Guide and limitations',
+    'Pronto • execução local • sem conta ou API': 'Ready • local execution • no account or API',
+    'Importar DNA': 'Import DNA', 'Exportar FASTA': 'Export FASTA',
+    'DNA 5′ → 3′  •  edite as letras; a análise acompanha': 'DNA 5′ → 3′  •  edit the letters; analysis follows',
+    'Analisar · F5': 'Analyze · F5', 'Reverso complementar': 'Reverse complement',
+    'Fixar referência': 'Set baseline', 'Tradução teórica • quadro': 'Theoretical translation • frame',
+    'Código genético padrão. * = parada; X = códon ambíguo.\nNão identifica genes, splicing ou expressão real.':
+        'Standard genetic code. * = stop; X = ambiguous codon.\nDoes not identify genes, splicing or actual expression.',
+    'Janela: início': 'Window: start', 'bases': 'bases', 'Ver': 'View', 'Enquadrar': 'Fit view',
+    'A verde  ·  T âmbar  ·  C azul  ·  G lilás  |  Rosa: posição diferente da referência\nHélice idealizada; os pontos representam bases, não átomos.':
+        'A green  ·  T amber  ·  C blue  ·  G purple  |  Pink: position differs from baseline\nIdealized helix; dots represent bases, not atoms.',
+    'Abrir arquivo PDB': 'Open PDB file', 'Exemplo geométrico': 'Geometric demo',
+    'Átomos': 'Atoms', 'Traço Cα': 'Cα trace', 'Exportar SVG': 'Export SVG',
+    'Importe coordenadas de uma estrutura existente. O editor de DNA não recalcula esse arquivo.':
+        'Import coordinates of an existing structure. The DNA editor does not recalculate this file.',
+    'PDB: primeiro modelo; conformações alternativas A/vazia. Traço Cα não representa ligações atômicas.\nCoordenadas importadas não são uma previsão de dobramento; a origem experimental ou computacional deve ser conferida na fonte.':
+        'PDB: first model; A/blank alternate conformations. The Cα trace does not represent atomic bonds.\nImported coordinates are not a folding prediction; check their experimental or computational origin at the source.',
+    'Um circuito que você pode programar': 'A circuit you can program',
+    'Edite o JSON e execute. Parâmetros em unidades arbitrárias.\nOperadores: AND, OR, NOT_A ou XOR.':
+        'Edit the JSON and run it. Parameters use arbitrary units.\nOperators: AND, OR, NOT_A or XOR.',
+    'Executar simulação': 'Run simulation', 'Exportar CSV': 'Export CSV',
+    'dm/dt = transcription × entrada − decay_m × m\ndp/dt = translation × m − decay_p × p\nm(0) = p(0) = 0; entradas constantes.':
+        'dm/dt = transcription × input − decay_m × m\ndp/dt = translation × m − decay_p × p\nm(0) = p(0) = 0; constant inputs.',
+    'Modelo didático de produção e degradação. A célula é uma ilustração.\nA simulação não gera DNA nem prevê um organismo; portas contínuas são abstrações matemáticas.':
+        'Educational production/degradation model. The cell is an illustration.\nThe simulation neither generates DNA nor predicts an organism; continuous gates are mathematical abstractions.',
+    'Ocorreu um erro. Diagnóstico salvo em {0}': 'An error occurred. Diagnostic saved to {0}',
+    'BioForma • verifique a entrada': 'BioForma • check the input',
+    'Código alterado: execute novamente para atualizar a simulação.': 'Code changed: run again to update the simulation.',
+    'Entrada inválida • corrija o editor para visualizar.': 'Invalid input • correct the editor to display it.',
+    'DNA inválido — visualização suspensa': 'Invalid DNA — visualization suspended',
+    'indefinido': 'undefined',
+    '{0:,} bases   •   GC {1}   •   {2} ambíguas\n{3} códons completos   •   {4} paradas   •   {5} bases finais não traduzidas':
+        '{0:,} bases   •   GC {1}   •   {2} ambiguous\n{3} complete codons   •   {4} stops   •   {5} trailing untranslated bases',
+    'Comparação por posição: {0} diferenças na região comum; variação de tamanho {1:+d}.\nNão é alinhamento: inserções deslocam as posições seguintes.':
+        'Positional comparison: {0} differences in the shared region; length change {1:+d}.\nThis is not an alignment: insertions shift subsequent positions.',
+    'Análise atualizada • GC calculado apenas sobre A/C/G/T • coloração do editor nas primeiras 6.000 posições de texto':
+        'Analysis updated • GC calculated over A/C/G/T only • editor coloring limited to the first 6,000 text positions',
+    'Início deve existir na sequência; janela deve conter de 10 a 160 bases.':
+        'The start must exist in the sequence; the window must contain 10 to 160 bases.',
+    'Janela inválida': 'Invalid window',
+    'DNA ESQUEMÁTICO  /  posições {0}–{1}  /  projeção ortográfica':
+        'SCHEMATIC DNA  /  positions {0}–{1}  /  orthographic projection',
+    'Usar a sequência atual como referência de comparação?': 'Use the current sequence as the comparison baseline?',
+    'Projeto alterado': 'Unsaved project', 'Salvar o projeto antes de continuar?': 'Save the project before continuing?',
+    'Escolha a sequência': 'Choose a sequence',
+    '{0}  —  {1:,} bases': '{0}  —  {1:,} bases',
+    'Abrir sequência selecionada': 'Open selected sequence', 'Todos': 'All files',
+    'DNA (FASTA / GenBank)': 'DNA (FASTA / GenBank)',
+    'GenBank importado: somente sequência ORIGIN; anotações FEATURES não foram importadas.':
+        'GenBank imported: ORIGIN sequence only; FEATURES annotations were not imported.',
+    'FASTA exportado: {0}': 'FASTA exported: {0}',
+    'EXEMPLO GEOMÉTRICO — COORDENADAS ARTIFICIAIS': 'GEOMETRIC DEMO — ARTIFICIAL COORDINATES',
+    'COORDENADAS IMPORTADAS — ORIGEM A CONFERIR NO PDB': 'IMPORTED COORDINATES — CHECK THEIR ORIGIN IN THE PDB',
+    ' • limite de exibição atingido; apenas o prefixo é mostrado': ' • display limit reached; only the prefix is shown',
+    '{0:,} átomos carregados • {1:,} de {2:,} pontos visíveis no modo {3}{4}. ': '{0:,} atoms loaded • {1:,} of {2:,} points visible in {3} mode{4}. ',
+    'Não há átomos Cα compatíveis; selecione Átomos.': 'No compatible Cα atoms; select Atoms.',
+    'Entrada efetiva: {0:.3f}  •  proteína final: {1:.3f} u.a.\nEquilíbrio teórico: m = {2:.3f}; p = {3:.3f}':
+        'Effective input: {0:.3f}  •  final protein: {1:.3f} a.u.\nTheoretical equilibrium: m = {2:.3f}; p = {3:.3f}',
+    'Simulação calculada por solução analítica • unidades arbitrárias • parâmetros não calibrados':
+        'Simulation computed analytically • arbitrary units • uncalibrated parameters',
+    'Circuito inválido. Corrija o JSON e execute novamente.': 'Invalid circuit. Correct the JSON and run again.',
+    'Execute o circuito para atualizar o resultado.': 'Run the circuit to update the result.',
+    'EXPRESSÃO AO LONGO DO TEMPO': 'EXPRESSION OVER TIME',
+    '{0:g} tempo (u.a.)': '{0:g} time (a.u.)',
+    'mRNA  (azul)     proteína  (verde)  •  concentração em u.a.': 'mRNA  (blue)     protein  (green)  •  concentration in a.u.',
+    'Célula ilustrativa\n{0:.1f}% do equilíbrio deste modelo\nCor relativa; não é previsão de fluorescência.':
+        'Illustrative cell\n{0:.1f}% of this model’s equilibrium\nRelative color; not a fluorescence prediction.',
+    'Execute um circuito válido antes de exportar.': 'Run a valid circuit before exporting.',
+    'Simulação exportada: {0}': 'Simulation exported: {0}', 'Vista exportada: {0}': 'View exported: {0}',
+    'O projeto excede 12 MB. Use um PDB menor para poder salvar e reabrir nesta versão.':
+        'The project exceeds 12 MB. Use a smaller PDB to save and reopen it in this version.',
+    'Projeto BioForma': 'BioForma project', 'Projeto salvo: {0}': 'Project saved: {0}', 'Projeto aberto: {0}': 'Project opened: {0}',
+    'A sequência está vazia.': 'The sequence is empty.',
+    'Esta versão aceita até {0:,} bases por sequência.': 'This version accepts up to {0:,} bases per sequence.',
+    'Símbolos inválidos para DNA: ': 'Invalid DNA symbols: ',
+    '. Use A, C, G, T ou códigos de ambiguidade IUPAC.': '. Use A, C, G, T or IUPAC ambiguity codes.',
+    'Há sequência antes do primeiro cabeçalho FASTA.': 'Sequence data precedes the first FASTA header.',
+    'Sem nome': 'Untitled', 'Sequência': 'Sequence',
+    'Registro GenBank sem linha LOCUS válida.': 'GenBank record has no valid LOCUS line.',
+    'GenBank sem sequência ORIGIN; registros CONTIG não são suportados.': 'GenBank has no ORIGIN sequence; CONTIG records are unsupported.',
+    'Linha inválida na seção ORIGIN do GenBank.': 'Invalid line in the GenBank ORIGIN section.',
+    'Nenhum registro GenBank encontrado.': 'No GenBank records found.',
+    'Quadro de leitura deve ser 0, 1 ou 2.': 'The reading frame must be 0, 1 or 2.',
+    'Linha de coordenadas PDB incompleta.': 'Incomplete PDB coordinate line.',
+    'Coordenadas PDB inválidas.': 'Invalid PDB coordinates.',
+    'O PDB contém coordenadas não finitas.': 'The PDB contains non-finite coordinates.',
+    'Coordenadas fora do intervalo aceito pelo visor PDB.': 'Coordinates exceed the PDB viewer’s supported range.',
+    'Esta versão aceita PDB com até 50.000 átomos no primeiro modelo.': 'This version accepts PDB files with up to 50,000 atoms in the first model.',
+    'Nenhum átomo compatível encontrado no primeiro modelo PDB.': 'No compatible atoms found in the first PDB model.',
+    'Use exatamente os campos do exemplo de circuito.': 'Use exactly the fields in the circuit example.',
+    'Operador permitido: AND, OR, NOT_A ou XOR.': 'Allowed operator: AND, OR, NOT_A or XOR.',
+    '{0}: informe um número entre {1} e {2}.': '{0}: enter a number between {1} and {2}.',
+    'Arquivo maior que o limite de 12 MB desta versão.': 'File exceeds this version’s 12 MB limit.',
+    'Formato/versão de projeto não reconhecido.': 'Unrecognized project format/version.',
+    'Campo de projeto inválido: {0}.': 'Invalid project field: {0}.',
+    'Nome de projeto longo demais.': 'Project name is too long.', 'Quadro de leitura inválido.': 'Invalid reading frame.',
+    'Posição {0} • base {1} • ': 'Position {0} • base {1} • ',
+    'fita 5′→3′': '5′→3′ strand', 'complementar antiparalela': 'antiparallel complement',
+    ' • alterada nesta posição': ' • changed at this position',
+    '{0} {1} • cadeia {2} • {3} ({4})': '{0} {1} • chain {2} • {3} ({4})',
+    'Arraste: girar  ·  Roda: zoom  ·  Botão direito: mover  ·  Duplo clique: enquadrar':
+        'Drag: rotate  ·  Wheel: zoom  ·  Right button: pan  ·  Double-click: fit view',
+    'Abra uma estrutura PDB\nou escolha um exemplo.': 'Open a PDB structure\nor choose a demo.',
+    'Idioma': 'Language',
+    'Idioma alterado. Os dados e os cálculos foram preservados.': 'Language changed. Data and calculations were preserved.',
+    'Não foi possível salvar a preferência de idioma: {0}': 'Could not save the language preference: {0}',
+    'Exportar registro de reprodução': 'Export reproducibility record',
+    'Registro de reprodução exportado: {0}': 'Reproducibility record exported: {0}',
+    'JSON inválido: {0}': 'Invalid JSON: {0}',
+    'Falha ao acessar arquivo: {0}': 'File access failed: {0}',
+    'Arquivo de texto inválido: {0}': 'Invalid text file: {0}',
+    'Não foi possível iniciar.\nDiagnóstico: {0}': 'Could not start the application.\nDiagnostic: {0}',
+}
+
+# Public references and provenance.
+EN.update({'04  Referências públicas': '04  Public references', 'A busca falhou. O projeto atual foi preservado.': 'Retrieval failed. The current project was preserved.', 'A busca opcional envia apenas o acesso ao NCBI e requer internet. Limite: 100.000 bases.\nFASTA traz sequência; esta versão não interpreta genes ou anotações FEATURES.': 'Optional retrieval sends only the accession to NCBI and requires internet. Limit: 100,000 bases.\nFASTA provides sequence; this version does not interpret genes or FEATURES annotations.', 'A referência foi alterada: SHA-256 não confere.': 'The reference was changed: SHA-256 does not match.', 'Abrir referência selecionada': 'Open selected reference', 'Bacteriófago • PhiX174 • genoma': 'Bacteriophage • PhiX174 • genome', 'Bactéria • Bacillus subtilis • 16S rRNA': 'Bacterium • Bacillus subtilis • 16S rRNA', 'Buscar FASTA no NCBI': 'Retrieve FASTA from NCBI', 'Caminho de referência inválido.': 'Invalid reference path.', 'Coleta UTC: {0}': 'Retrieved UTC: {0}', 'Consultando o NCBI…': 'Retrieving from NCBI…', 'DNA de fita simples: o visor mostra um duplex idealizado, não sua conformação nativa.': 'Single-stranded DNA: the viewport shows an idealized duplex, not its native conformation.', 'Dados reais, origem documentada': 'Real data, documented sources', 'Estrutura de crambina obtida por difração de raios X; coordenadas fornecidas pelo RCSB PDB.': 'Crambin structure determined by X-ray diffraction; coordinates provided by RCSB PDB.', 'Estrutura independente da sequência de DNA aberta. O programa não calcula dobramento.': 'Structure independent of the open DNA sequence. The program does not calculate folding.', 'Falha na consulta ao NCBI: {0}': 'NCBI retrieval failed: {0}', 'Genoma de bacteriófago, 5.386 bases. Tradução em quadro arbitrário não identifica seus genes.': 'Bacteriophage genome, 5,386 bases. Translation in an arbitrary frame does not identify its genes.', 'Identificador da sequência não confere com a referência.': 'Sequence identifier does not match the reference.', 'Locus parcial de RNA ribossômico, 1.517 bases. Não é um genoma bacteriano completo.': 'Partial ribosomal RNA locus, 1,517 bases. This is not a complete bacterial genome.', 'Metadados de origem inválidos.': 'Invalid source metadata.', 'NCBI • acesso com versão': 'NCBI • versioned accession', 'O NCBI não retornou um registro FASTA válido.': 'NCBI did not return a valid FASTA record.', 'Origem: {0}': 'Source: {0}', 'Origem: {0} • {1}': 'Source: {0} • {1}', 'Os três exemplos incluídos funcionam offline. Selecione um e abra na bancada.': 'The three bundled examples work offline. Select one and open it in the workbench.', 'Proteína • crambina • 1CRN': 'Protein • crambin • 1CRN', 'Referência carregada. Origem e hashes serão preservados no projeto.': 'Reference loaded. Source and hashes will be preserved in the project.', 'Referências': 'References', 'Sequência sem origem de referência documentada.': 'Sequence has no documented reference source.', 'Use um acesso com versão, por exemplo NR_027552.1.': 'Use a versioned accession, for example NR_027552.1.', 'alterada em relação à sequência importada': 'changed relative to the imported sequence', 'igual à sequência importada': 'matches the imported sequence', 'rRNA: a tradução em códons é apenas uma operação matemática, sem significado de proteína.': 'rRNA: codon translation is only a mathematical operation, not a protein interpretation.'})

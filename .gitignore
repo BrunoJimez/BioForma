@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.buildenv/
+build/
+dist/
+*.spec
+*.egg-info/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+erro.log
+settings.json
+local-results/
+*.bioforma.json
+!exemplos/*.bioforma.json
+bioforma_reproducibility.json

@@ -1,0 +1,63 @@
+LOCUS       NR_027552               1517 bp    rRNA    linear   BCT 12-MAR-2019
+DEFINITION  Bacillus subtilis strain DSM 10 16S ribosomal RNA, partial
+            sequence.
+ACCESSION   NR_027552
+VERSION     NR_027552.1
+DBLINK      Project: 33175
+            BioProject: PRJNA33175
+KEYWORDS    RefSeq.
+SOURCE      Bacillus subtilis
+  ORGANISM  Bacillus subtilis
+            Bacteria; Bacillati; Bacillota; Bacilli; Caryophanales;
+            Bacillaceae; Bacillus.
+REFERENCE   1  (bases 1 to 1517)
+  CONSRTM   NCBI RefSeq Targeted Loci Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-APR-2009) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   2  (bases 1 to 1517)
+  AUTHORS   Sproeer,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-MAR-2000) Sproeer C., Molecular Systematics, Dsmz,
+            Mascheroder Weg 1B, 38124 Braunschweig, GERMANY
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AJ276351.
+FEATURES             Location/Qualifiers
+     source          1..1517
+                     /organism="Bacillus subtilis"
+                     /mol_type="rRNA"
+                     /strain="DSM 10"
+                     /culture_collection="DSM:10"
+                     /type_material="type strain of Bacillus subtilis"
+                     /db_xref="taxon:1423"
+     rRNA            <1..>1517
+                     /product="16S ribosomal RNA"
+ORIGIN      
+        1 cctggctcag gacgaacgct ggcggcgtgc ctaatacatg caagtcgagc ggacagatgg
+       61 gagcttgctc cctgatgtta gcggcggacg ggtgagtaac acgtgggtaa cctgcctgta
+      121 agactgggat aactccggga aaccggggct aataccggat ggttgtttga accgcatggt
+      181 tcaaacataa aaggtggctt cggctaccac ttacagatgg acccgcggcg cattagctag
+      241 ttggtgaggt aacggctcac caaggcaacg atgcgtagcc gacctgagag ggtgatcggc
+      301 cacactggga ctgagacacg gcccagactc ctacgggagg cagcagtagg gaatcttccg
+      361 caatggacga aagtctgacg gagcaacgcc gcgtgagtga tgaaggtttt cggatcgtaa
+      421 agctctgttg ttagggaaga acaagtaccg ttcgaatagg gcggtacctt gacggtacct
+      481 aaccagaaag ccacggctaa ctacgtgcca gcagccgcgg taatacgtag gtggcaagcg
+      541 ttgtccggaa ttattgggcg taaagggctc gcaggcggtt tcttaagtct gatgtgaaag
+      601 cccccggctc aaccggggag ggtcattgga aactggggaa cttgagtgca gaagaggaga
+      661 gtggaattcc acgtgtagcg gtgaaatgcg tagagatgtg gaggaacacc agtggcgaag
+      721 gcgactctct ggtctgtaac tgacgctgag gagcgaaagc gtggggagcg aacaggatta
+      781 gataccctgg tagtccacgc cgtaaacgat gagtgctaag tgttaggggg tttccgcccc
+      841 ttagtgctgc agctaacgca ttaagcactc cgcctgggga gtacggtcgc aagactgaaa
+      901 ctcaaaggaa ttgacggggg cccgcacaag cggtggagca tgtggtttaa ttcgaagcaa
+      961 cgcgaagaac cttaccaggt cttgacatcc tctgacaatc ctagagatag gacgtcccct
+     1021 tcgggggcag agtgacaggt ggtgcatggt tgtcgtcagc tcgtgtcgtg agatgttggg
+     1081 ttaagtcccg caacgagcgc aacccttgat cttagttgcc agcattcagt tgggcactct
+     1141 aaggtgactg ccggtgacaa accggaggaa ggtggggatg acgtcaaatc atcatgcccc
+     1201 ttatgacctg ggctacacac gtgctacaat ggacagaaca aagggcagcg aaaccgcgag
+     1261 gttaagccaa tcccacaaat ctgttctcag ttcggatcgc agtctgcaac tcgactgcgt
+     1321 gaagctggaa tcgctagtaa tcgcggatca gcatgccgcg gtgaatacgt tcccgggcct
+     1381 tgtacacacc gcccgtcaca ccacgagagt ttgtaacacc cgaagtcggt gaggtaacct
+     1441 tttaggagcc agccgccgaa ggtgggacag atgattgggg tgaagtcgta acaaggtagc
+     1501 cgtatcggaa ggtgcgg
+//
+

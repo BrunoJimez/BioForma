@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use BioForma Studio in research, cite this software and the exact version/commit used."
+type: software
+title: "BioForma Studio: a bilingual educational desktop workbench for DNA and molecular models"
+version: 0.3.0
+date-released: 2026-10-11
+license: MIT
+authors:
+  - family-names: "Jimez"
+    given-names: "Bruno"
+abstract: "A local Windows/Linux educational workbench for sequence inspection, schematic DNA visualization, PDB coordinates and an analytical gene-expression toy model. Biological validation has not been performed."
+keywords:
+  - educational software
+  - bioinformatics
+  - reproducibility
+  - DNA visualization
+repository-code: "https://github.com/BrunoJimez/BioForma"

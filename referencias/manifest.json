@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "accession": "NR_027552.1",
+      "provider": "NCBI RefSeq",
+      "record_url": "https://www.ncbi.nlm.nih.gov/nuccore/NR_027552.1",
+      "retrieved_utc": "2026-10-10T22:16:40.845292+00:00",
+      "files": {
+        "fasta": {
+          "path": "NR_027552.1.fasta",
+          "sha256": "8e817b865795c9b0e595ffea6b233ac33238ca9cc716bd3546c2226db67b720d",
+          "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NR_027552.1&rettype=fasta&retmode=text&tool=BioFormaStudio"
+        },
+        "gb": {
+          "path": "NR_027552.1.gb",
+          "sha256": "d160cbe32a8f68a45a16754806eb0963027c94e04ace56ff6865666baebaad3b",
+          "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NR_027552.1&rettype=gb&retmode=text&tool=BioFormaStudio"
+        }
+      },
+      "title": "Bactéria • Bacillus subtilis • 16S rRNA",
+      "description": "Locus parcial de RNA ribossômico, 1.517 bases. Não é um genoma bacteriano completo.",
+      "molecule_note": "rRNA: a tradução em códons é apenas uma operação matemática, sem significado de proteína."
+    },
+    {
+      "accession": "NC_001422.1",
+      "provider": "NCBI RefSeq",
+      "record_url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_001422.1",
+      "retrieved_utc": "2026-10-10T22:16:52.806384+00:00",
+      "files": {
+        "fasta": {
+          "path": "NC_001422.1.fasta",
+          "sha256": "caa155c83967cc080f4f188f14f1f28c18d77448e87c3d00d3579ed348f4de2a",
+          "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_001422.1&rettype=fasta&retmode=text&tool=BioFormaStudio"
+        },
+        "gb": {
+          "path": "NC_001422.1.gb",
+          "sha256": "0a8099e207633f8c3ba998bfe2a198518e1de356c7956691101b2512324b807c",
+          "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_001422.1&rettype=gb&retmode=text&tool=BioFormaStudio"
+        }
+      },
+      "title": "Bacteriófago • PhiX174 • genoma",
+      "description": "Genoma de bacteriófago, 5.386 bases. Tradução em quadro arbitrário não identifica seus genes.",
+      "molecule_note": "DNA de fita simples: o visor mostra um duplex idealizado, não sua conformação nativa."
+    },
+    {
+      "accession": "1CRN",
+      "provider": "RCSB PDB",
+      "record_url": "https://www.rcsb.org/structure/1CRN",
+      "retrieved_utc": "2026-10-10T22:17:08.631170+00:00",
+      "files": {
+        "pdb": {
+          "path": "1CRN.pdb",
+          "sha256": "42199a30a0701864a2a5cc76cd7f35cc544cd0e65fbcf63e03c166543249b811",
+          "download_url": "https://files.rcsb.org/download/1CRN.pdb"
+        }
+      },
+      "title": "Proteína • crambina • 1CRN",
+      "description": "Estrutura de crambina obtida por difração de raios X; coordenadas fornecidas pelo RCSB PDB.",
+      "molecule_note": "Estrutura independente da sequência de DNA aberta. O programa não calcula dobramento."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "version": "0.3.0",
+  "generated_utc": "2026-10-11T06:22:57.790554+00:00",
+  "environment": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "unit_tests": {
+    "passed": 35,
+    "failed": 0
+  },
+  "native_gui": {
+    "pt": "passed",
+    "en": "passed",
+    "reference_loading": "passed",
+    "project_and_record_provenance": "passed",
+    "async_success_and_error": "passed (mocked responses)",
+    "language_draft_cursor_undo_hash_invariance": "passed"
+  },
+  "live_ncbi": "see live_ncbi_check.json",
+  "user_report": {
+    "version": "0.2.0",
+    "os": "Windows",
+    "statement": "User confirmed the new version worked; this is not an exhaustive benchmark."
+  },
+  "pending": [
+    "Remote CI results; inspect Actions after publication.",
+    "Manual target-machine run of the v0.3 package.",
+    "Biological validation and external scientific study."
+  ],
+  "source_sha256": {
+    "verificar_interface.py": "67c3d7934ee78c5332eafac1487a4ac4d7e2a2da09683782204cf0871486a8f2"
+  }
+}

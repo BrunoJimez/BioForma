@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-10-11T06:18:24.594607+00:00",
+  "accession": "NR_027552.1",
+  "length": 1517,
+  "matches_frozen_sequence": true,
+  "source": {
+    "kind": "ncbi_reference",
+    "label": "NR_027552.1",
+    "accession": "NR_027552.1",
+    "provider": "NCBI Nucleotide",
+    "record_url": "https://www.ncbi.nlm.nih.gov/nuccore/NR_027552.1",
+    "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NR_027552.1&rettype=fasta&retmode=text&tool=BioFormaStudio",
+    "retrieved_utc": "2026-10-11T06:18:24.593325+00:00",
+    "file_sha256": "8e817b865795c9b0e595ffea6b233ac33238ca9cc716bd3546c2226db67b720d",
+    "sequence_sha256": "6bbf1f26750d14c1ba75a2a4cd77d3d876d75da14710652e31db8c96c5c17532"
+  }
+}
