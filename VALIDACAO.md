@@ -108,3 +108,15 @@ passou a declarar UTF-8 ao ler os fixtures e o manifesto. Não houve alteração
 no motor, nos dados ou nas tolerâncias numéricas.
 Execução original: https://github.com/BrunoJimez/BioForma/actions/runs/38117969544
 A execução após a correção deve ser conferida em Actions; não presumir aprovação.
+
+A segunda execução (commit `8a98e14`, run 38118075402) passou nos seis jobs:
+interface/núcleo em Windows e Linux com Python 3.10/3.12 e validação independente
+os dois sistemas. Ao conferir os artifacts, os hashes das dependências textuais
+e do manifesto no Windows diferiram apenas pela conversão Git de LF para CRLF.
+Foi verificado que a conversão explica exatamente cada diferença. Os fixtures
+biológicos continuaram byte a byte iguais e todos os critérios passaram.
+Para padronizar a rastreabilidade, `.gitattributes` agora fixa JSON/TXT em LF;
+relatórios originais baixados do CI são preservados sem conversão. Os cálculos
+e critérios permanecem iguais. O relatório Windows dessa execução fica em
+`validacao/results_v0.3.0_windows_ci_initial.json`; o arquivo final é gerado
+pela execução após a padronização.

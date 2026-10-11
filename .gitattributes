@@ -3,9 +3,13 @@
 *.md text eol=lf
 *.yml text eol=lf
 *.cff text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
 *.sh text eol=lf
 *.cmd text eol=crlf
 # Frozen source bytes and fixed-width PDB padding must survive Windows checkout.
 referencias/*.pdb -text whitespace=-blank-at-eol,-blank-at-eof
 referencias/*.fasta -text whitespace=-blank-at-eol,-blank-at-eof
 referencias/*.gb -text whitespace=-blank-at-eol,-blank-at-eof
+# Preserve exact downloaded CI report bytes (including platform-specific newlines).
+validacao/*_ci*.json -text whitespace=-blank-at-eol,-blank-at-eof
