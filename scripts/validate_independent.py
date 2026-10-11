@@ -43,7 +43,7 @@ def run():
     checks=report['checks']
     def check(name,ok,**details):
         checks.append({'name':name,'passed':bool(ok),**details})
-    manifest=json.loads((ROOT/'referencias/manifest.json').read_text())
+    manifest=json.loads((ROOT/'referencias/manifest.json').read_text(encoding='utf-8'))
     for record in manifest['records']:
         for fmt,info in record['files'].items():
             path=ROOT/'referencias'/info['path']
@@ -51,8 +51,8 @@ def run():
         if 'fasta' not in record['files']:
             continue
         acc=record['accession']
-        fa=(ROOT/'referencias'/record['files']['fasta']['path']).read_text()
-        gb=(ROOT/'referencias'/record['files']['gb']['path']).read_text()
+        fa=(ROOT/'referencias'/record['files']['fasta']['path']).read_text(encoding='utf-8')
+        gb=(ROOT/'referencias'/record['files']['gb']['path']).read_text(encoding='utf-8')
         ours_fa=parse_fasta(fa);ours_gb=parse_genbank(gb)
         ref_fa=SeqIO.read(io.StringIO(fa),'fasta')
         ref_gb=SeqIO.read(io.StringIO(gb),'genbank')
@@ -82,7 +82,7 @@ def run():
     check('3375_IUPAC_declared_policy',policy_ok,cases=15**3,
           comparator_differences=len(differences),interpretation='Intentional conservative X policy; not full consensus translation agreement.')
     report['iupac_differences']=differences
-    pdb=(ROOT/'referencias/1CRN.pdb').read_text()
+    pdb=(ROOT/'referencias/1CRN.pdb').read_text(encoding='utf-8')
     ours,info=parse_pdb(pdb)
     ref=PDBParser(QUIET=True).get_structure('1CRN',io.StringIO(pdb))[0]
     atoms=list(ref.get_atoms())

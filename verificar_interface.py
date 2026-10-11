@@ -111,9 +111,9 @@ def check_language(language):
             with patch('bioforma.app.filedialog.asksaveasfilename',return_value=str(record_path)):
                 app.export_record()
             import json
-            assert json.loads(record_path.read_text())['sha256']==numerical
+            assert json.loads(record_path.read_text(encoding='utf-8'))['sha256']==numerical
             app.dna_view.export_svg(Path(folder)/'view.svg')
-            assert '<svg' in (Path(folder)/'view.svg').read_text()
+            assert '<svg' in (Path(folder)/'view.svg').read_text(encoding='utf-8')
             app.circuit_editor.delete('1.0','end')
             app.circuit_editor.insert('1.0','{}')
             app.update()

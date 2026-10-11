@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "version": "0.3.0",
-  "generated_utc": "2026-10-11T06:22:57.790554+00:00",
+  "generated_utc": "2026-10-11T06:26:17.276792+00:00",
   "environment": "Linux-6.18.44-x86_64-with-glibc2.39",
   "python": "3.12.14",
   "unit_tests": {
@@ -28,6 +28,15 @@
     "Biological validation and external scientific study."
   ],
   "source_sha256": {
-    "verificar_interface.py": "67c3d7934ee78c5332eafac1487a4ac4d7e2a2da09683782204cf0871486a8f2"
+    "verificar_interface.py": "7d40f5d0c0f8719c0609bf8b97fc22b329cffd85dd1e20106d1b59ccf5e47be9"
+  },
+  "initial_remote_ci": {
+    "commit": "349a2319a48da41ab28db2d003f11b2a6c9d85ed",
+    "run_url": "https://github.com/BrunoJimez/BioForma/actions/runs/38117969544",
+    "independent_validation_windows": "passed",
+    "independent_validation_linux": "passed",
+    "linux_core_and_gui_python310_312": "passed",
+    "windows_core_python310_312": "passed; Linux install test skipped",
+    "windows_gui_python310_312": "failed in verifier decoding UTF-8 SVG with cp1252; verifier corrected and local GUI rerun passed"
   }
 }

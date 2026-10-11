@@ -2,7 +2,7 @@
   "schema": 1,
   "software": "BioForma Studio",
   "version": "0.3.0",
-  "generated_utc": "2026-10-11T06:21:37.398691+00:00",
+  "generated_utc": "2026-10-11T06:25:59.277649+00:00",
   "environment": {
     "python": "3.12.14",
     "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
@@ -2727,7 +2727,7 @@
     "bioforma/translations.py": "85ec6fb200174cf75bb73b2ed506a9a4fba1f4ca2ea08462c9ec3e18b3ddbee0",
     "bioforma/viewer.py": "7adae5043507f5e9faea9fc64a6bfd4a88583661f73b33a5585f2cc382025773",
     "requirements-validation.txt": "8f3ebea7f42ea2d5491aef4641cf1c25face77ea137d9d418bc80bc0de16fb4d",
-    "scripts/validate_independent.py": "9d593bf029f19aa242aa284a062e1e2f4fcc3a8522ed09c8d94e93682fad1bc9",
+    "scripts/validate_independent.py": "ca9bbd5b2a2394e2ccf8410d1d2e8b533d3d8eaf3fd0016cdc7910bdfccba5b5",
     "validacao/PROTOCOL.md": "7ec9355ba3bd1d6d8899692498c5df88cdacdc19f0f48139b20bb6fb779a59fb"
   },
   "fixture_manifest_sha256": "d1105fa6f3517b81fd1fe47f0e00832704ac7855e6c9aac33acdf9c1fc9ce668",

@@ -97,3 +97,14 @@ matched the frozen bacterial fixture. This is small-corpus computational evidenc
 not biological validation, independent human review or a completed paper study.
 Windows 0.2 was user-confirmed; v0.3 target-machine checks and remote CI evidence
 are separate. Full machine-readable results and code/data hashes are provided.
+
+## Histórico do CI remoto
+
+A primeira execução remota, commit `349a231`, confirmou os testes do núcleo
+em Windows, mas falhou no script de interface ao ler SVG UTF-8 com a codificação
+padrão cp1252. A leitura do verificador foi corrigida para UTF-8 explícito;
+o aplicativo já exportava o arquivo em UTF-8. O validador científico também
+passou a declarar UTF-8 ao ler os fixtures e o manifesto. Não houve alteração
+no motor, nos dados ou nas tolerâncias numéricas.
+Execução original: https://github.com/BrunoJimez/BioForma/actions/runs/38117969544
+A execução após a correção deve ser conferida em Actions; não presumir aprovação.
